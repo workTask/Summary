@@ -1,0 +1,201 @@
+/* специфікація */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+ul,li {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+h3{
+    font-weight: 400; 
+}
+h2{
+    text-align: center;
+}
+h6{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+/* first display */
+
+.header{
+    background: #fcdb00;
+    color: #010101;
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+.menu{
+    padding-top: 11px;
+}
+
+.menu__item{
+    margin: 0 55px;
+}
+.menu__item a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #010101;
+}
+.offer{
+    margin-top: 130px;
+}
+.offer__title{
+    font-size: 32px;
+}
+.offer_description{
+
+}
+
+.icons__item{
+    margin-right: 40px;
+}
+.icons__item a{
+    color: #010101 ;
+    font-size: 42px;
+    /*затримка 3 сек*/
+    transition: all 0.5s ease;
+}
+.icons__item a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.ipad{
+    display: block;
+    margin: 60px auto 0 ;
+}
+
+
+/* second display */
+.title{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.title_main{
+    font-size: 32px;
+}
+.title_description{
+   font-size: 20px; 
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+.features{
+    margin-bottom: 50px;
+}
+.features_icon{
+    font-size: 50px;
+    margin-right: 40px;
+    color:#010101;
+}
+.features_text{
+    color: #989898;
+}
+/* end display */
+.yellow{
+    color: #fcdb00;
+}
+.touch{
+    background: #010101;
+    color:  #fff;
+}
+/***************************FORM*************************/
+.form{
+    padding-bottom: 260px;
+    text-align: center;
+}
+.form__input{
+    background: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    width: 580px;
+    border-radius:5px ;
+    padding: 14px 0 14px 20px;
+    border: 0;
+    outline: none;
+}
+.forrm_btn{
+    font-family: 'PT Sans', sans-serif;
+    background: #fcdb00;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 126px;
+    padding: 14px 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    
+}
+/* footer */
+.footer{
+   
+    background: #000;
+    padding: 50px 0 94px;
+}
+.copyright_text{
+    color: #fff;
+    font-size: 16px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+/* media */
+@media screen and (max-width: 992px) {
+    .logo{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    .offer{
+        text-align: center;
+    }
+    .offer_description{
+
+        margin: 20px auto;  
+    }
+   
+    .icons{
+        justify-content: space-around;
+    }
+    .icons__item:nth-child(3){
+        margin-right: 0;
+    } 
+    .form__input{
+        margin-right: 0;
+        width: 100%;
+    }
+    .forrm_btn{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .title_description{
+        width: auto;
+    }
+    
+    @media screen and (max-width: 576px) {
+        .ipad{
+            width: 100%;
+        }
+        .menu{
+            flex-direction: column;
+        }
+        .menu__item{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+     
+    }  
+    
+}
